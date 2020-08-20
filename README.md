@@ -12,3 +12,4 @@ IPADDR="192.168.5.12"
 NETMASK="255.255.255.0"
 
 On systems that don't use these network scripts, just add the call to ifconfig directly in your startup script (usually /etc/rc.d/rc.local).
+ethtool -s eth3 speed 100 duplex full autoneg on
