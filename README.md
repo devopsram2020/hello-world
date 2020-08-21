@@ -13,3 +13,9 @@ NETMASK="255.255.255.0"
 
 On systems that don't use these network scripts, just add the call to ifconfig directly in your startup script (usually /etc/rc.d/rc.local).
 ethtool -s eth3 speed 100 duplex full autoneg on
+how to check kernel header version centos
+URL https://stackoverflow.com/questions/6513731/linux-yum-install-gcc-missing-kernel-headers
+Your system is probably configured to exclude the kernel packages.
+try: sudo vi /etc/yum.conf then comment (or remove the 'kernel*' part):
+#exclude=kernel*
+again try to install the packages
