@@ -23,4 +23,6 @@ try: sudo vi /etc/yum.conf then comment (or remove the 'kernel*' part):
 #exclude=kernel*
 again try to install the packages
 sip trunk configuration, if inbound hitting to server and coming in tshark logs, then we have to check port and context routing. If sip trunk voice is not coming, then we have capture the wireshark logs and find the hidden IP's, based on that, need to configure in route.
+
+
 find . -type f -name '*' ! -name '*-in.wav' ! -name '*-out.wav'
