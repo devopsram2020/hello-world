@@ -32,7 +32,9 @@ find . -type f -name '*' ! -name '*-in.wav' ! -name '*-out.wav'
 vim install
 
 #!/bin/bash
-apt-get update  # To get the latest package lists
+
+apt-get update 
+
 apt-get install $1 -y
 
 chmod +x install
