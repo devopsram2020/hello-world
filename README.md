@@ -17,12 +17,25 @@ ethtool -s eth3 speed 100 duplex full autoneg on
 how to check kernel header version centos
 
 URL https://stackoverflow.com/questions/6513731/linux-yum-install-gcc-missing-kernel-headers
-Your system is probably configured to exclude the kernel packages.
-try: sudo vi /etc/yum.conf then comment (or remove the 'kernel*' part):
+Your system is probably configured to exclude the kernel packages. try: sudo vi /etc/yum.conf then comment (or remove the 'kernel*' part):
 
 #exclude=kernel*
 again try to install the packages
+
+
 sip trunk configuration, if inbound hitting to server and coming in tshark logs, then we have to check port and context routing. If sip trunk voice is not coming, then we have capture the wireshark logs and find the hidden IP's, based on that, need to configure in route.
 
 
 find . -type f -name '*' ! -name '*-in.wav' ! -name '*-out.wav'
+
+
+vim install
+
+#!/bin/bash
+apt-get update  # To get the latest package lists
+apt-get install $1 -y
+
+chmod +x install
+
+
+./install <package_name>
